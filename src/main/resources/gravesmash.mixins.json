@@ -1,12 +1,14 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.jam.graveyard-smash.mixin",
+  "package": "net.jam.gravesmash.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "BuiltinBiomesAccessor",
+    "SetBaseBiomesLayerAccessor",
+    "VanillaLayeredBiomeSourceAccessor"
   ],
   "client": [
-    "ExampleMixin"
   ],
   "injectors": {
     "defaultRequire": 1
