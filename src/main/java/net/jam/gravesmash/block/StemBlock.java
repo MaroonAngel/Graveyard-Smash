@@ -29,7 +29,7 @@ public class StemBlock extends net.minecraft.block.StemBlock {
                     Direction direction = Direction.Type.HORIZONTAL.random(random);
                     BlockPos blockPos = pos.offset(direction);
                     BlockState blockState = world.getBlockState(blockPos.down());
-                    if (world.getBlockState(blockPos).isAir() && (blockState.isOf(Blocks.FARMLAND) || blockState.isOf(Blocks.DIRT) || blockState.isOf(Blocks.COARSE_DIRT) || blockState.isOf(Blocks.PODZOL) || blockState.isOf(Blocks.GRASS_BLOCK))) {
+                    if (world.getBlockState(blockPos).isAir() && (blockState.isOf(net.minecraft.block.Blocks.FARMLAND) || blockState.isOf(net.minecraft.block.Blocks.DIRT) || blockState.isOf(net.minecraft.block.Blocks.COARSE_DIRT) || blockState.isOf(net.minecraft.block.Blocks.PODZOL) || blockState.isOf(net.minecraft.block.Blocks.GRASS_BLOCK))) {
                         world.setBlockState(blockPos, this.gourdBlock.getDefaultState());
                         world.setBlockState(pos, (BlockState)this.gourdBlock.getAttachedStem().getDefaultState().with(HorizontalFacingBlock.FACING, direction));
                         world.setBlockState(blockPos, modifyGourdBlockState(this.gourdBlock.getDefaultState().with(HorizontalFacingBlock.FACING, direction), direction));

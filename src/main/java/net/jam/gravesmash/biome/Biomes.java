@@ -3,6 +3,7 @@ package net.jam.gravesmash.biome;
 import net.fabricmc.fabric.mixin.biome.BuiltinBiomesAccessor;
 import net.fabricmc.fabric.mixin.biome.VanillaLayeredBiomeSourceAccessor;
 import net.jam.gravesmash.biome.feature.Features;
+import net.jam.gravesmash.biome.feature.Pieces;
 import net.jam.gravesmash.mixin.SetBaseBiomesLayerAccessor;
 import net.minecraft.sound.BiomeMoodSound;
 import net.minecraft.util.Identifier;
@@ -47,6 +48,7 @@ public class Biomes {
         DefaultBiomeFeatures.addWaterBiomeOakTrees(generationSettings);
         generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, Features.PUMPKIN_PATCH);
         generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, Features.PUMPKIN_BUSH);
+        generationSettings.structureFeature(Pieces.TREE_CONFIGURED);
 
 
 
