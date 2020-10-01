@@ -51,7 +51,7 @@ public class Biomes {
 
 
         return (new net.minecraft.world.biome.Biome.Builder()).precipitation(Biome.Precipitation.RAIN).category(Biome.Category.NONE)
-                .depth(0.15F).scale(0.2f).temperature(0.5f).downfall(0.4F).effects((new net.minecraft.world.biome.BiomeEffects.Builder()).foliageColor(0xbf7024)
+                .depth(0.15F).scale(0.2f).temperature(0.5f).downfall(0.4F).effects((new net.minecraft.world.biome.BiomeEffects.Builder()).foliageColor(0xff8119)
                         .waterColor(0xc49d6c).waterFogColor(0x9e5f10).fogColor(12638463).grassColor(0xe0852f).skyColor(0xb3fcd8).moodSound(BiomeMoodSound.CAVE)
                         .build()).spawnSettings(spawnSettings.build()).generationSettings(generationSettings.build()).build();
 
