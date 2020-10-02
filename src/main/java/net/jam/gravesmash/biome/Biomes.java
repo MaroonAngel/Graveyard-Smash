@@ -48,7 +48,7 @@ public class Biomes {
         DefaultBiomeFeatures.addWaterBiomeOakTrees(generationSettings);
         generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, Features.PUMPKIN_PATCH);
         generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, Features.PUMPKIN_BUSH);
-        generationSettings.structureFeature(Pieces.TREE_CONFIGURED);
+        //generationSettings.structureFeature(Pieces.TREE_CONFIGURED);
 
 
 

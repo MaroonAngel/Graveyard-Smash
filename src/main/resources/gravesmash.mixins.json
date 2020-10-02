@@ -6,7 +6,8 @@
   "mixins": [
     "BuiltinBiomesAccessor",
     "SetBaseBiomesLayerAccessor",
-    "VanillaLayeredBiomeSourceAccessor"
+    "VanillaLayeredBiomeSourceAccessor",
+    "DefaultBiomeFeaturesMixin"
   ],
   "client": [
   ],

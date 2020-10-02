@@ -32,7 +32,7 @@ public class TreeGenerator {
         }
 
         public TreePiece(StructureManager structureManager, BlockPos pos, Identifier template, BlockRotation rotation) {
-            super(Pieces.TREE_PIECE, 0);
+            super(Pieces.TREE_PIECE, 1);
             this.pos = pos;
             this.rotation = rotation;
             this.template = template;
@@ -47,6 +47,12 @@ public class TreeGenerator {
             .setMirror(BlockMirror.NONE)
             .addProcessor(BlockIgnoreStructureProcessor.IGNORE_STRUCTURE_BLOCKS));
             this.setStructureData(structure, this.pos, placementData);
+        }
+
+        protected void toNbt(CompoundTag tag) {
+            super.toNbt(tag);
+            tag.putString("Template", this.template.toString());
+            tag.putString("Rot", this.rotation.name());
         }
 
 

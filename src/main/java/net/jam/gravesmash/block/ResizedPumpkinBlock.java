@@ -27,6 +27,6 @@ public abstract class ResizedPumpkinBlock extends Block {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext ctx) {
-        return Block.createCuboidShape(4, 0, 4, 12, 12, 12);
+        return Block.createCuboidShape(4, 0, 4, 12, 8, 12);
     }
 }
