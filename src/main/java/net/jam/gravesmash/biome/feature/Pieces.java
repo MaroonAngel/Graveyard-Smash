@@ -13,10 +13,11 @@ import net.minecraft.world.gen.feature.StructureFeature;
 public class Pieces {
 
     public static final StructurePieceType TREE_PIECE = TreeGenerator.TreePiece::new;
-    private static final StructureFeature<DefaultFeatureConfig> TREE_STRUCTURE = new TreeFeature(DefaultFeatureConfig.CODEC);
-    public static final ConfiguredStructureFeature<?, ?> TREE_CONFIGURED = TREE_STRUCTURE.configure(DefaultFeatureConfig.DEFAULT);
+    //private static final StructureFeature<DefaultFeatureConfig> TREE_STRUCTURE = new TreeFeature(DefaultFeatureConfig.CODEC);
+    //public static final ConfiguredStructureFeature<?, ?> TREE_CONFIGURED = TREE_STRUCTURE.configure(DefaultFeatureConfig.DEFAULT);
 
     public static void register() {
+        /*
         Registry.register(Registry.STRUCTURE_PIECE, new Identifier("gravesmash", "tree1_piece"), TREE_PIECE);
         FabricStructureBuilder.create(new Identifier("gravesmash", "tree1_structure"), TREE_STRUCTURE)
             .step(GenerationStep.Feature.SURFACE_STRUCTURES)
@@ -26,5 +27,7 @@ public class Pieces {
 
         BuiltinRegistries.add(BuiltinRegistries.CONFIGURED_STRUCTURE_FEATURE, new Identifier("gravesmash", "tree1_structure"),
                 TREE_CONFIGURED);
+
+         */
     }
 }

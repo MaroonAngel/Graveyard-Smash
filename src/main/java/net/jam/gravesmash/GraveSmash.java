@@ -15,8 +15,7 @@ public class GraveSmash implements ModInitializer {
 		// Proceed with mild caution.
 
 
-		Features.register();
-		Pieces.register();
+		Features.register();		
 		Biomes.register();
 		Blocks.register();
 
