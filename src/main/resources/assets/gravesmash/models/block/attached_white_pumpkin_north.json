@@ -1,0 +1,52 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"3": "Minecraft Textures/white_pumpkin_top",
+		"4": "Minecraft Textures/white_pumpkin_side",
+		"5": "Minecraft Textures/white_pumpkin_bottom",
+		"6": "Minecraft Textures/attached_white_pumpkin_stem_horizontal",
+		"7": "Minecraft Textures/attached_white_pumpkin_stem_horizontal_inverted",
+		"particle": "Minecraft Textures/attached_white_pumpkin_stem_horizontal"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 4],
+			"to": [12, 8, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [12, 8, 13]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#4"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#4"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#4"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#4"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#5"}
+			}
+		},
+		{
+			"from": [8, 8, 0],
+			"to": [8, 11, 12],
+			"rotation": {"angle": 0, "axis": "x", "origin": [15, 16, 15]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 8], "texture": "#missing"},
+				"east": {"uv": [0, 9.333, 16, 16], "texture": "#6"},
+				"south": {"uv": [-1.333, 0, 0, 8], "texture": "#missing"},
+				"west": {"uv": [0, 9.333, 16, 16], "texture": "#7"},
+				"up": {"uv": [0, 0, 0, 12], "texture": "#missing"},
+				"down": {"uv": [0, 0, 0, 12], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [6, 9, 0],
+			"to": [10, 9, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [22, 17, 15]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 0], "texture": "#missing"},
+				"east": {"uv": [0, 0, 12, 0], "texture": "#missing"},
+				"south": {"uv": [0, 0, 8, 0], "texture": "#missing"},
+				"west": {"uv": [0, 0, 12, 0], "texture": "#missing"},
+				"up": {"uv": [0, 9.333, 16, 16], "rotation": 90, "texture": "#7"},
+				"down": {"uv": [0, 9.333, 16, 15.999], "rotation": 270, "texture": "#7"}
+			}
+		}
+	]
+}
