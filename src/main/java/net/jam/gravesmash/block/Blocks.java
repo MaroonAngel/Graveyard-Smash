@@ -24,9 +24,9 @@ public class Blocks {
     public static void register() {
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "white_pumpkin"), WHITE_PUMPKIN);
         Registry.register(Registry.ITEM, new Identifier("gravesmash", "white_pumpkin"), new BlockItem(WHITE_PUMPKIN, new Item.Settings().group(ItemGroup.DECORATIONS)));
-        Registry.register(Registry.BLOCK, new Identifier("gravesmash", "white_pumpkin"), ATTACHED_WHITE_PUMPKIN_NORTH);
-        Registry.register(Registry.BLOCK, new Identifier("gravesmash", "white_pumpkin"), ATTACHED_WHITE_PUMPKIN_SOUTH);
-        Registry.register(Registry.BLOCK, new Identifier("gravesmash", "white_pumpkin"), ATTACHED_WHITE_PUMPKIN_EAST);
-        Registry.register(Registry.BLOCK, new Identifier("gravesmash", "white_pumpkin"), ATTACHED_WHITE_PUMPKIN_WEST);
+        Registry.register(Registry.BLOCK, new Identifier("gravesmash", "attached_white_pumpkin_north"), ATTACHED_WHITE_PUMPKIN_NORTH);
+        Registry.register(Registry.BLOCK, new Identifier("gravesmash", "attached_white_pumpkin_south"), ATTACHED_WHITE_PUMPKIN_SOUTH);
+        Registry.register(Registry.BLOCK, new Identifier("gravesmash", "attached_white_pumpkin_east"), ATTACHED_WHITE_PUMPKIN_EAST);
+        Registry.register(Registry.BLOCK, new Identifier("gravesmash", "attached_white_pumpkin_west"), ATTACHED_WHITE_PUMPKIN_WEST);
     }
 }

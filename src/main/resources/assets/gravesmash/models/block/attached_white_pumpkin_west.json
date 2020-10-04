@@ -1,12 +1,12 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "Minecraft Textures/white_pumpkin_bottom",
-		"1": "Minecraft Textures/white_pumpkin_side",
-		"3": "Minecraft Textures/white_pumpkin_top",
-		"4": "Minecraft Textures/attached_white_pumpkin_stem_horizontal",
-		"5": "Minecraft Textures/attached_white_pumpkin_stem_horizontal_inverted",
-		"particle": "Minecraft Textures/white_pumpkin_bottom"
+		"0": "gravesmash:block/white_pumpkin_bottom",
+		"1": "gravesmash:block/white_pumpkin_side",
+		"3": "gravesmash:block/white_pumpkin_top",
+		"4": "gravesmash:block/attached_white_pumpkin_stem_horizontal",
+		"5": "gravesmash:block/attached_white_pumpkin_stem_horizontal_inverted",
+		"particle": "gravesmash:block/white_pumpkin_side"
 	},
 	"elements": [
 		{

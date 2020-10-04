@@ -5,7 +5,7 @@
 		"1": "gravesmash:block/white_pumpkin_side",
 		"2": "gravesmash:block/white_pumpkin_bottom",
 		"3": "gravesmash:block/white_pumpkin_top",
-		"particle": "white_pumpkin_side"
+		"particle": "gravesmash:block/white_pumpkin_side"
 	},
 	"elements": [
 		{
