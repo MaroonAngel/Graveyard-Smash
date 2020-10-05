@@ -5,6 +5,7 @@ import net.jam.gravesmash.biome.Biomes;
 import net.jam.gravesmash.biome.feature.Features;
 import net.jam.gravesmash.biome.feature.Pieces;
 import net.jam.gravesmash.block.Blocks;
+import net.jam.gravesmash.lib.Directions;
 import net.minecraft.world.biome.DefaultBiomeCreator;
 
 public class GraveSmash implements ModInitializer {
@@ -14,6 +15,7 @@ public class GraveSmash implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+		Directions.register();
 
 		Features.register();		
 		Biomes.register();

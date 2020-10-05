@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.jam.gravesmash.GraveSmash"
+    ],
+    "client": [
+      "net.jam.gravesmash.init.ClientInit"
     ]
   },
   "mixins": [

@@ -35,13 +35,12 @@ public class Biomes {
         GenerationSettings.Builder generationSettings = new GenerationSettings.Builder();
         generationSettings.surfaceBuilder(ConfiguredSurfaceBuilders.GRASS);
         DefaultBiomeFeatures.addDefaultUndergroundStructures(generationSettings);
-        DefaultBiomeFeatures.addLandCarvers(generationSettings);
-        DefaultBiomeFeatures.addDefaultLakes(generationSettings);
+        //DefaultBiomeFeatures.addLandCarvers(generationSettings);
         DefaultBiomeFeatures.addDungeons(generationSettings);
         DefaultBiomeFeatures.addMineables(generationSettings);
         DefaultBiomeFeatures.addDefaultOres(generationSettings);
         DefaultBiomeFeatures.addDefaultDisks(generationSettings);
-        DefaultBiomeFeatures.addFrozenTopLayer(generationSettings);
+        //DefaultBiomeFeatures.addFrozenTopLayer(generationSettings);
         DefaultBiomeFeatures.addDefaultVegetation(generationSettings);
         DefaultBiomeFeatures.addJungleGrass(generationSettings);
         DefaultBiomeFeatures.addDefaultFlowers(generationSettings);
@@ -49,11 +48,12 @@ public class Biomes {
         generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, Features.PUMPKIN_PATCH);
         generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, Features.PUMPKIN_BUSH);
         generationSettings.feature(GenerationStep.Feature.TOP_LAYER_MODIFICATION, Features.TREE_CONFIGURED);
+        generationSettings.feature(GenerationStep.Feature.SURFACE_STRUCTURES, Features.GRAVEYARD_CONFIGURED);
 
 
 
         return (new net.minecraft.world.biome.Biome.Builder()).precipitation(Biome.Precipitation.RAIN).category(Biome.Category.NONE)
-                .depth(0.15F).scale(0.2f).temperature(0.5f).downfall(0.4F).effects((new net.minecraft.world.biome.BiomeEffects.Builder()).foliageColor(0xff8119)
+                .depth(0.1F).scale(0.05f).temperature(0.5f).downfall(0.4F).effects((new net.minecraft.world.biome.BiomeEffects.Builder()).foliageColor(0xff8119)
                         .waterColor(0xc49d6c).waterFogColor(0x9e5f10).fogColor(12638463).grassColor(0xe0852f).skyColor(0xb3fcd8).moodSound(BiomeMoodSound.CAVE)
                         .build()).spawnSettings(spawnSettings.build()).generationSettings(generationSettings.build()).build();
 

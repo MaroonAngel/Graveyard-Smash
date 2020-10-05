@@ -25,7 +25,12 @@ public class Features {
     public static ConfiguredFeature<?, ?> PUMPKIN_BUSH;
     public static Feature<DefaultFeatureConfig> TREE = new TreeFeature(DefaultFeatureConfig.CODEC);
     public static ConfiguredFeature<?, ?> TREE_CONFIGURED = TREE.configure(FeatureConfig.DEFAULT)
-            .decorate(Decorator.CHANCE.configure(new ChanceDecoratorConfig(40)));
+            .decorate(Decorator.CHANCE.configure(new ChanceDecoratorConfig(15)));
+
+    public static Feature<DefaultFeatureConfig> GRAVEYARD = new GraveyardFeature(DefaultFeatureConfig.CODEC);
+    public static ConfiguredFeature<?, ?> GRAVEYARD_CONFIGURED = GRAVEYARD.configure(FeatureConfig.DEFAULT)
+            .decorate(Decorator.CHANCE.configure(new ChanceDecoratorConfig(20)));
+
 
     public static void register() {
 
@@ -42,6 +47,9 @@ public class Features {
 
         Registry.register(Registry.FEATURE, new Identifier("gravesmash", "tree"), TREE);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("gravesmash", "tree"), TREE_CONFIGURED);
+
+        Registry.register(Registry.FEATURE, new Identifier("gravesmash", "graveyard"), GRAVEYARD);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("gravesmash", "graveyard"), GRAVEYARD_CONFIGURED);
 
 
     }

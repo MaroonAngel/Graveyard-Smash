@@ -27,11 +27,6 @@ public class TreeFeature extends Feature<DefaultFeatureConfig> {
         this.world = world;
 
         BlockPos topPos = world.getTopPosition(Heightmap.Type.WORLD_SURFACE, position).down();
-        //Block test = world.getBlockState(topPos).getBlock();
-        //if (test != Blocks.GRASS_BLOCK)
-        //    return false;
-
-
 
         BlockPos pos = topPos;
 
@@ -80,7 +75,7 @@ public class TreeFeature extends Feature<DefaultFeatureConfig> {
         setLog(pos);
         setLog(pos.offset(Direction.SOUTH).offset(Direction.UP));
         setLog(pos.offset(Direction.SOUTH).offset(Direction.UP).offset(Direction.SOUTH));
-        spreadLeaves(pos);
+        spreadLeaves(pos.offset(Direction.SOUTH).offset(Direction.UP).offset(Direction.SOUTH));
 
         // Branch East
         pos = branchBase.offset(Direction.UP).offset(Direction.EAST);
@@ -122,11 +117,13 @@ public class TreeFeature extends Feature<DefaultFeatureConfig> {
     }
 
     public void spreadLeaves(BlockPos origin) {
-        BlockPos pos = origin;
+        BlockPos pos;
 
-        for (int x = -3; x < 4; x++) {
-            for (int y = -0; y < 4; y++) {
-                for (int z = -3; z < 4; z++) {
+        int rad = 2;
+
+        for (int x = -rad; x <= rad; x++) {
+            for (int y = -0; y <= 3; y++) {
+                for (int z = -rad; z <= rad; z++) {
                     if (canPlace(x, y, z)) {    // (x + z != 0) && x + z != -6 && x + z + y != 9) {
                         pos = origin.offset(Direction.EAST, x).offset(Direction.NORTH, z).offset(Direction.UP, y);
                         if (world.getBlockState(pos).getBlock() != Blocks.OAK_LOG)
@@ -139,10 +136,20 @@ public class TreeFeature extends Feature<DefaultFeatureConfig> {
 
 
     public boolean canPlace(int x, int y, int z) {
-        if ((maxed(x) && maxed(z))) { // x + z != 6 && x+z != -6 && x+z )
+        // x + z != 6 && x+z != -6 && x+z )
+        if (maxed(x) && maxed(z))
             return false;
-        } else
-            return true;
+        if ((maxed(x) ^ maxed(z)) && (y == 3|| y == 0))
+            return false;
+
+        return true;
+
+
+
+        //return (!maxed(x) || !maxed(z));
+
+
+
 
 
 
@@ -150,7 +157,7 @@ public class TreeFeature extends Feature<DefaultFeatureConfig> {
     }
 
     public boolean maxed(int i) {
-        return i == 3 || i == -3;
+        return i == 2 || i == -2;
     }
 
 
