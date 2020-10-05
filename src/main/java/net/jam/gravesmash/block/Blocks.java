@@ -20,6 +20,8 @@ public class Blocks {
     public static final Block ATTACHED_WHITE_PUMPKIN_WEST = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
     public static final Block GREEN_PUMPKIN = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
 
+    public static final PedestalBlock PEDESTAL = new PedestalBlock(FabricBlockSettings.of(Material.STONE).strength(2f).sounds(BlockSoundGroup.STONE));
+
     //Spooky Magic
     public static final Block SPOOKY_CRAFTING_TABLE = new WhitePumpkinBlock(FabricBlockSettings.of(Material.STONE).strength(5.0F).sounds (BlockSoundGroup.STONE));
 
@@ -31,6 +33,9 @@ public class Blocks {
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "attached_white_pumpkin_south"), ATTACHED_WHITE_PUMPKIN_SOUTH);
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "attached_white_pumpkin_east"), ATTACHED_WHITE_PUMPKIN_EAST);
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "attached_white_pumpkin_west"), ATTACHED_WHITE_PUMPKIN_WEST);
+
+        Registry.register(Registry.BLOCK, new Identifier("gravesmash", "pedestal"), PEDESTAL);
+
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "spooky_crafting_table"), SPOOKY_CRAFTING_TABLE);
         Registry.register(Registry.ITEM, new Identifier("gravesmash", "spooky_crafting_table"), new BlockItem(SPOOKY_CRAFTING_TABLE, new Item.Settings().group(ItemGroup.DECORATIONS)));
 

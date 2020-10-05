@@ -70,14 +70,13 @@ public class GraveyardFeature extends Feature<DefaultFeatureConfig> {
 
         for (int x = -1; x <= 1; x++) {
             for (int y = -1; y <= 1; y++) {
-                world.setBlockState(pos.offset(dir.rotateYCounterclockwise(), x).offset(dir, y),
-                        (x == 0 && y == 0) ? Blocks.AIR.getDefaultState() : Blocks.POLISHED_ANDESITE_SLAB.getDefaultState(), 3);
+                world.setBlockState(pos.offset(dir.rotateYCounterclockwise(), x).offset(dir, y), Blocks.POLISHED_ANDESITE.getDefaultState(), 3);
                 world.setBlockState(pos.offset(dir.rotateYCounterclockwise(), x).offset(dir, y).up(), Blocks.AIR.getDefaultState(), 3);
                 world.setBlockState(pos.offset(dir.rotateYCounterclockwise(), x).offset(dir, y).up().up(), Blocks.AIR.getDefaultState(), 3);
             }
         }
 
-        world.setBlockState(pos.down(), Blocks.POLISHED_ANDESITE.getDefaultState(), 3);
+        world.setBlockState(pos.up(), net.jam.gravesmash.block.Blocks.PEDESTAL.getDefaultState(), 3);
 
         BlockPos rowPos = pos; // = pos.offset(dir, 3);
 
@@ -230,13 +229,13 @@ public class GraveyardFeature extends Feature<DefaultFeatureConfig> {
     private void getChestLoot(ChestBlockEntity chest, Random random) {
 
         for (int i = 0; i < random.nextInt(4)+1; i++) {
-            int chance = random.nextInt(100);
+            float chance = random.nextInt(10000) / 100f;
 
             if (chance < 3)
                 chest.setStack(random.nextInt(26), new ItemStack(Items.DIAMOND, random.nextInt(2)+1));
-            else if (chance < 4)
+            else if (chance < 3.25)
                 chest.setStack(random.nextInt(26), new ItemStack(Items.ENCHANTED_GOLDEN_APPLE, 1));
-            else if (chance < 13)
+            else if (chance < 8)
                 chest.setStack(random.nextInt(26), new ItemStack(Items.EMERALD, random.nextInt(9)+1));
             else if (chance < 50)
                 chest.setStack(random.nextInt(26), new ItemStack(Items.ROTTEN_FLESH, random.nextInt(4)+1));
