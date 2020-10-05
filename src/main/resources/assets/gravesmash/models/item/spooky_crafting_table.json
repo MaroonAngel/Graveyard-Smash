@@ -1,0 +1,6 @@
+{
+	"parent": "gravesmash:block/spooky_crafting_table",
+	"textures": {
+		"layer0": "gravesmash:item/spooky_crafting_table"
+	}
+}
