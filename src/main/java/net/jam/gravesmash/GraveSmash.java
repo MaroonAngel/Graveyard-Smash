@@ -5,6 +5,7 @@ import net.jam.gravesmash.biome.Biomes;
 import net.jam.gravesmash.biome.feature.Features;
 import net.jam.gravesmash.biome.feature.Pieces;
 import net.jam.gravesmash.block.Blocks;
+import net.jam.gravesmash.item.Items;
 import net.jam.gravesmash.lib.Directions;
 import net.minecraft.world.biome.DefaultBiomeCreator;
 
@@ -20,6 +21,7 @@ public class GraveSmash implements ModInitializer {
 		Features.register();		
 		Biomes.register();
 		Blocks.register();
+		Items.register();
 
 
 		System.out.println("Hello Fabric world!");

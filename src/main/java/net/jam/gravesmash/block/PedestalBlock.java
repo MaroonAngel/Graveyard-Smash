@@ -1,6 +1,5 @@
 package net.jam.gravesmash.block;
 
-import javafx.scene.shape.Shape;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;

@@ -2,6 +2,7 @@ package net.jam.gravesmash.block;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.EnchantingTableBlock;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -23,7 +24,7 @@ public class Blocks {
     public static final PedestalBlock PEDESTAL = new PedestalBlock(FabricBlockSettings.of(Material.STONE).strength(2f).sounds(BlockSoundGroup.STONE));
 
     //Spooky Magic
-    public static final Block SPOOKY_CRAFTING_TABLE = new WhitePumpkinBlock(FabricBlockSettings.of(Material.STONE).strength(5.0F).sounds (BlockSoundGroup.STONE));
+    public static final Block SPOOKY_CRAFTING_TABLE = new SpookyCraftingTableBlock(FabricBlockSettings.of(Material.STONE).strength(5.0F).sounds (BlockSoundGroup.STONE));
 
     // Registry
     public static void register() {
