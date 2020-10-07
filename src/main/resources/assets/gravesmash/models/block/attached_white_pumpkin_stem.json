@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/stem_fruit",
+  "textures": {
+    "stem": "gravesmash:block/white_pumpkin_stem",
+    "upperstem": "gravesmash:block/attached_white_pumpkin_stem"
+  }
+}

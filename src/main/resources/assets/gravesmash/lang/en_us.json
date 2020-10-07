@@ -2,5 +2,8 @@
   "biome.gravesmash.pumpkin_patch": "Pumpkin Patch",
   "block.gravesmash.white_pumpkin": "White Pumpkin",
   "block.gravesmash.spooky_crafting_table": "Spooky Crafting Table",
-  "item.gravesmash.white_pumpkin_seeds": "White Pumpkin Seeds"
+  "item.gravesmash.white_pumpkin_seeds": "White Pumpkin Seeds",
+  "block.gravesmash.green_pumpkin": "Green Pumpkin",
+  "item.gravesmash.green_pumpkin_seeds": "Green Pumpkin Seeds"
+
 }
