@@ -1,5 +1,19 @@
 {
   "variants": {
-    "": {"model": "gravesmash:block/carved_white_pumpkin"}
+    "facing=east": {
+      "model": "gravesmash:block/carved_white_pumpkin",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "gravesmash:block/carved_white_pumpkin"
+    },
+    "facing=south": {
+      "model": "gravesmash:block/carved_white_pumpkin",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "gravesmash:block/carved_white_pumpkin",
+      "y": 270
+    }
   }
 }

@@ -1,5 +1,5 @@
 {"credit": "Made with Blockbench",
-	"parent": "block/cube_all",
+	"parent": "block/cube",
 	"textures": {
 		"0": "gravesmash:block/white_pumpkin_bottom",
 		"1": "gravesmash:block/carved_white_pumpkin",
