@@ -1,0 +1,6 @@
+{
+  "parent": "gravesmash:block/carved_white_pumpkin",
+  "textures": {
+    "layer0": "gravesmash:item/carved_white_pumpkin"
+  }
+}
