@@ -14,7 +14,7 @@ public class Blocks {
 
     // Pumpkins
     public static final Block WHITE_PUMPKIN = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
-    public static final Block CARVED_WHITE_PUMPKIN = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
+    public static final Block CARVED_WHITE_PUMPKIN = new CarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
     public static final Block ATTACHED_WHITE_PUMPKIN_NORTH = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
     public static final Block ATTACHED_WHITE_PUMPKIN_SOUTH = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
     public static final Block ATTACHED_WHITE_PUMPKIN_EAST = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
