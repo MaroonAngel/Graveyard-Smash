@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X#",
+    "III"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:skeleton_skull"
+    },
+    "X": {
+      "item": "minecraft:blue_wool"
+    },
+    "I": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "gravesmash:spooky_crafting_table"
+  }
+}

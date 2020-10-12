@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "green_pumpkin_seeds",
+  "ingredients": [
+    {
+      "item": "gravesmash:green_pumpkin"
+    }
+  ],
+  "result": {
+    "item": "gravesmash:green_pumpkin_seeds"
+  }
+}
