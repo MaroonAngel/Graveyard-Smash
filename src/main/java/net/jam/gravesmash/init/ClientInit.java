@@ -9,11 +9,21 @@ public class ClientInit implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(Blocks.WHITE_PUMPKIN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.WHITE_PUMPKIN_SEEDS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.ATTACHED_WHITE_PUMPKIN_SEEDS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(Blocks.ATTACHED_WHITE_PUMPKIN_NORTH, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(Blocks.ATTACHED_WHITE_PUMPKIN_EAST, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(Blocks.ATTACHED_WHITE_PUMPKIN_WEST, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(Blocks.ATTACHED_WHITE_PUMPKIN_SOUTH, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GREEN_PUMPKIN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.GREEN_PUMPKIN_SEEDS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.ATTACHED_GREEN_PUMPKIN_SEEDS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.ATTACHED_GREEN_PUMPKIN_NORTH, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.ATTACHED_GREEN_PUMPKIN_EAST, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.ATTACHED_GREEN_PUMPKIN_WEST, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.ATTACHED_GREEN_PUMPKIN_SOUTH, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(Blocks.AUTUMN_LEAVES, RenderLayer.getCutout());
     }
 }

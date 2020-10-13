@@ -13,8 +13,8 @@ public class Items {
 
     // Registry
     public static void register() {
-    Registry.register(Registry.ITEM, new Identifier("gravesmash", "white_pumpkin_seeds"), (WHITE_PUMPKIN_SEEDS));
-    Registry.register(Registry.ITEM, new Identifier("gravesmash", "green_pumpkin_seeds"), (GREEN_PUMPKIN_SEEDS));
+    //Registry.register(Registry.ITEM, new Identifier("gravesmash", "white_pumpkin_seeds"), (WHITE_PUMPKIN_SEEDS));
+    //Registry.register(Registry.ITEM, new Identifier("gravesmash", "green_pumpkin_seeds"), (GREEN_PUMPKIN_SEEDS));
     Registry.register(Registry.ITEM, new Identifier("gravesmash", "autumn_essence"), (AUTUMN_ESSENCE));
  }
 }

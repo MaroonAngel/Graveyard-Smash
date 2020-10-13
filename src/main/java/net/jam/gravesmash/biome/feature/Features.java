@@ -22,6 +22,8 @@ import static net.minecraft.world.gen.feature.Feature.RANDOM_PATCH;
 public class Features {
 
     public static ConfiguredFeature<?, ?> PUMPKIN_PATCH;
+    public static ConfiguredFeature<?, ?> GREEN_PUMPKIN_PATCH;
+    public static ConfiguredFeature<?, ?> WHITE_PUMPKIN_PATCH;
     public static ConfiguredFeature<?, ?> PUMPKIN_BUSH;
     public static Feature<DefaultFeatureConfig> TREE = new TreeFeature(DefaultFeatureConfig.CODEC);
     public static ConfiguredFeature<?, ?> TREE_CONFIGURED = TREE.configure(FeatureConfig.DEFAULT)
@@ -36,8 +38,18 @@ public class Features {
 
         PUMPKIN_PATCH = Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("gravesmash", "pumpkin_patch"),
                 (ConfiguredFeature) Feature.RANDOM_PATCH.configure((new RandomPatchFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.PUMPKIN.getDefaultState()),
-                SimpleBlockPlacer.INSTANCE)).tries(64).whitelist(ImmutableSet.of(Blocks.GRASS_BLOCK.getDefaultState().getBlock())).cannotProject().build())
+                SimpleBlockPlacer.INSTANCE)).tries(48).whitelist(ImmutableSet.of(Blocks.GRASS_BLOCK.getDefaultState().getBlock())).cannotProject().build())
                 .decorate(ConfiguredFeatures.Decorators.SQUARE_HEIGHTMAP_SPREAD_DOUBLE).repeat(25));
+
+        GREEN_PUMPKIN_PATCH = Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("gravesmash", "green_pumpkin_patch"),
+                (ConfiguredFeature) Feature.RANDOM_PATCH.configure((new RandomPatchFeatureConfig.Builder(new SimpleBlockStateProvider(net.jam.gravesmash.block.Blocks.GREEN_PUMPKIN.getDefaultState()),
+                        SimpleBlockPlacer.INSTANCE)).tries(32).whitelist(ImmutableSet.of(Blocks.GRASS_BLOCK.getDefaultState().getBlock())).cannotProject().build())
+                        .decorate(ConfiguredFeatures.Decorators.SQUARE_HEIGHTMAP_SPREAD_DOUBLE).repeat(20));
+
+        WHITE_PUMPKIN_PATCH = Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("gravesmash", "white_pumpkin_patch"),
+                (ConfiguredFeature) Feature.RANDOM_PATCH.configure((new RandomPatchFeatureConfig.Builder(new SimpleBlockStateProvider(net.jam.gravesmash.block.Blocks.WHITE_PUMPKIN.getDefaultState()),
+                        SimpleBlockPlacer.INSTANCE)).tries(32).whitelist(ImmutableSet.of(Blocks.GRASS_BLOCK.getDefaultState().getBlock())).cannotProject().build())
+                        .decorate(ConfiguredFeatures.Decorators.SQUARE_HEIGHTMAP_SPREAD_DOUBLE).repeat(20));
 
         PUMPKIN_BUSH = Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier("gravesmash", "pumpkin_bush"),
                 Feature.TREE.configure((new net.minecraft.world.gen.feature.TreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.OAK_LOG.getDefaultState()),
