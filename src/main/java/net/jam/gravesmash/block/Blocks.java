@@ -29,7 +29,7 @@ public class Blocks {
 
     // Jack
     public static final PedestalBlock PEDESTAL = new PedestalBlock(FabricBlockSettings.of(Material.STONE).strength(2f).sounds(BlockSoundGroup.STONE));
-
+    public static final Block AUTUMN_LEAVES = new Block(FabricBlockSettings.of(Material.LEAVES).strength(0.2f).sounds (BlockSoundGroup.GRASS));
     //Spooky Magic
     public static final SpookyCraftingTableBlock SPOOKY_CRAFTING_TABLE = new SpookyCraftingTableBlock(FabricBlockSettings.of(Material.STONE).strength(5.0F).sounds (BlockSoundGroup.STONE));
 
@@ -54,6 +54,8 @@ public class Blocks {
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "attached_green_pumpkin_west"), ATTACHED_GREEN_PUMPKIN_WEST);
 
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "pedestal"), PEDESTAL);
+        Registry.register(Registry.BLOCK, new Identifier("gravesmash", "autumn_leaves"), AUTUMN_LEAVES);
+        Registry.register(Registry.ITEM, new Identifier("gravesmash", "autumn_leaves"), new BlockItem(AUTUMN_LEAVES, new Item.Settings().group(ItemGroup.DECORATIONS)));
 
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "spooky_crafting_table"), SPOOKY_CRAFTING_TABLE);
         Registry.register(Registry.ITEM, new Identifier("gravesmash", "spooky_crafting_table"), new BlockItem(SPOOKY_CRAFTING_TABLE, new Item.Settings().group(ItemGroup.DECORATIONS)));
