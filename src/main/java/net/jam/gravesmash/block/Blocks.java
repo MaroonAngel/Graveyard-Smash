@@ -21,6 +21,7 @@ public class Blocks {
     public static final WhitePumpkinBlock ATTACHED_WHITE_PUMPKIN_WEST = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
 
     public static final WhitePumpkinBlock GREEN_PUMPKIN = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
+    public static final CarvedPumpkinBlock CARVED_GREEN_PUMPKIN = new CarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
     public static final WhitePumpkinBlock ATTACHED_GREEN_PUMPKIN_NORTH = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
     public static final WhitePumpkinBlock ATTACHED_GREEN_PUMPKIN_SOUTH = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
     public static final WhitePumpkinBlock ATTACHED_GREEN_PUMPKIN_EAST = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
@@ -45,6 +46,8 @@ public class Blocks {
 
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "green_pumpkin"), GREEN_PUMPKIN);
         Registry.register(Registry.ITEM, new Identifier("gravesmash", "green_pumpkin"), new BlockItem(GREEN_PUMPKIN, new Item.Settings().group(ItemGroup.DECORATIONS)));
+        Registry.register(Registry.BLOCK, new Identifier("gravesmash", "carved_green_pumpkin"), CARVED_GREEN_PUMPKIN);
+        Registry.register(Registry.ITEM, new Identifier("gravesmash", "carved_green_pumpkin"), new BlockItem(CARVED_GREEN_PUMPKIN, new Item.Settings().group(ItemGroup.DECORATIONS)));
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "attached_green_pumpkin_north"), ATTACHED_GREEN_PUMPKIN_NORTH);
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "attached_green_pumpkin_south"), ATTACHED_GREEN_PUMPKIN_SOUTH);
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "attached_green_pumpkin_east"), ATTACHED_GREEN_PUMPKIN_EAST);
