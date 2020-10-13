@@ -231,10 +231,12 @@ public class GraveyardFeature extends Feature<DefaultFeatureConfig> {
         for (int i = 0; i < random.nextInt(4)+1; i++) {
             float chance = random.nextInt(10000) / 100f;
 
-            if (chance < 3)
+            if (chance < 2)
                 chest.setStack(random.nextInt(26), new ItemStack(Items.DIAMOND, random.nextInt(2)+1));
-            else if (chance < 3.25)
+            else if (chance < 2.25)
                 chest.setStack(random.nextInt(26), new ItemStack(Items.ENCHANTED_GOLDEN_APPLE, 1));
+            else if (chance < 3.75)
+                chest.setStack(random.nextInt(26), new ItemStack(net.jam.gravesmash.item.Items.AUTUMN_ESSENCE, 1));
             else if (chance < 8)
                 chest.setStack(random.nextInt(26), new ItemStack(Items.EMERALD, random.nextInt(9)+1));
             else if (chance < 50)

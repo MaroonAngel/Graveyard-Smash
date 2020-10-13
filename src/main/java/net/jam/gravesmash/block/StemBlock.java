@@ -53,9 +53,9 @@ public class StemBlock extends PlantBlock implements Fertilizable {
                     BlockPos blockPos = pos.offset(direction);
                     BlockState blockState = world.getBlockState(blockPos.down());
                     if (world.getBlockState(blockPos).isAir() && (blockState.isOf(net.minecraft.block.Blocks.FARMLAND) || blockState.isOf(net.minecraft.block.Blocks.DIRT) || blockState.isOf(net.minecraft.block.Blocks.COARSE_DIRT) || blockState.isOf(net.minecraft.block.Blocks.PODZOL) || blockState.isOf(net.minecraft.block.Blocks.GRASS_BLOCK))) {
-                        world.setBlockState(blockPos, this.gourdBlock.getDefaultState());
-                        world.setBlockState(pos, (BlockState)this.gourdBlock.getAttachedStem().getDefaultState().with(HorizontalFacingBlock.FACING, direction));
+                        //world.setBlockState(blockPos, this.gourdBlock.getDefaultState());
                         world.setBlockState(blockPos, getGourdState(this.gourdBlock.getDefaultState(), direction));
+                        world.setBlockState(pos, (BlockState)this.gourdBlock.getAttachedStem().getDefaultState().with(HorizontalFacingBlock.FACING, direction));
                     }
                 }
             }
@@ -72,7 +72,7 @@ public class StemBlock extends PlantBlock implements Fertilizable {
             if (dir == Direction.EAST)
                 return Blocks.ATTACHED_WHITE_PUMPKIN_WEST.getDefaultState();
             if (dir == Direction.WEST)
-                return Blocks.ATTACHED_WHITE_PUMPKIN_WEST.getDefaultState();
+                return Blocks.ATTACHED_WHITE_PUMPKIN_EAST.getDefaultState();
         } else {
             if (dir == Direction.NORTH)
                 return Blocks.ATTACHED_GREEN_PUMPKIN_SOUTH.getDefaultState();
@@ -81,7 +81,7 @@ public class StemBlock extends PlantBlock implements Fertilizable {
             if (dir == Direction.EAST)
                 return Blocks.ATTACHED_GREEN_PUMPKIN_WEST.getDefaultState();
             if (dir == Direction.WEST)
-                return Blocks.ATTACHED_GREEN_PUMPKIN_WEST.getDefaultState();
+                return Blocks.ATTACHED_GREEN_PUMPKIN_EAST.getDefaultState();
         }
         return net.minecraft.block.Blocks.AIR.getDefaultState();
     }

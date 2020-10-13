@@ -23,7 +23,6 @@ public class GraveSmash implements ModInitializer {
 		Blocks.register();
 		Items.register();
 
-
 		System.out.println("Hello Fabric world!");
 	}
 }

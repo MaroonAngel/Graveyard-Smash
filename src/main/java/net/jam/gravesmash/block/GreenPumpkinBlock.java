@@ -19,12 +19,12 @@ public class GreenPumpkinBlock extends ResizedPumpkinBlock {
 
     @Override
     public AttachedStemBlock getAttachedStem() {
-        return Blocks.ATTACHED_WHITE_PUMPKIN_SEEDS;
+        return Blocks.ATTACHED_GREEN_PUMPKIN_SEEDS;
     }
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext ctx) {
-        return Block.createCuboidShape(2, 0, 2, 14, 8, 14);
+        return Block.createCuboidShape(2, 0, 2, 14, 12, 14);
     }
 
 

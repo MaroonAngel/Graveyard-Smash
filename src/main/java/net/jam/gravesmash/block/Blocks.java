@@ -15,7 +15,7 @@ public class Blocks {
     // Pumpkins
     public static final WhitePumpkinBlock WHITE_PUMPKIN = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
     public static final CarvedPumpkinBlock CARVED_WHITE_PUMPKIN = new CarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
-    public static final StemBlock WHITE_PUMPKIN_SEEDS = new StemBlock(WHITE_PUMPKIN, FabricBlockSettings.of(Material.PLANT).breakInstantly().noCollision().sounds(BlockSoundGroup.CROP));
+    public static final StemBlock WHITE_PUMPKIN_SEEDS = new StemBlock(WHITE_PUMPKIN, FabricBlockSettings.of(Material.PLANT).breakInstantly().noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP));
     public static final AttachedStemBlock ATTACHED_WHITE_PUMPKIN_SEEDS = new AttachedStemBlock(WHITE_PUMPKIN, FabricBlockSettings.of(Material.PLANT).breakInstantly().noCollision().sounds(BlockSoundGroup.CROP));
     public static final WhitePumpkinBlock ATTACHED_WHITE_PUMPKIN_NORTH = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
     public static final WhitePumpkinBlock ATTACHED_WHITE_PUMPKIN_SOUTH = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
@@ -24,7 +24,7 @@ public class Blocks {
 
     public static final GreenPumpkinBlock GREEN_PUMPKIN = new GreenPumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
     public static final CarvedPumpkinBlock CARVED_GREEN_PUMPKIN = new CarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
-    public static final StemBlock GREEN_PUMPKIN_SEEDS = new StemBlock(GREEN_PUMPKIN, FabricBlockSettings.of(Material.PLANT).breakInstantly().sounds(BlockSoundGroup.CROP).noCollision());
+    public static final StemBlock GREEN_PUMPKIN_SEEDS = new StemBlock(GREEN_PUMPKIN, FabricBlockSettings.of(Material.PLANT).breakInstantly().ticksRandomly().sounds(BlockSoundGroup.CROP).noCollision());
     public static final AttachedStemBlock ATTACHED_GREEN_PUMPKIN_SEEDS = new AttachedStemBlock(GREEN_PUMPKIN, FabricBlockSettings.of(Material.PLANT).breakInstantly().noCollision().sounds(BlockSoundGroup.CROP));
     public static final GreenPumpkinBlock ATTACHED_GREEN_PUMPKIN_NORTH = new GreenPumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
     public static final GreenPumpkinBlock ATTACHED_GREEN_PUMPKIN_SOUTH = new GreenPumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
