@@ -8,6 +8,10 @@
   "block.gravesmash.carved_white_pumpkin": "Carved White Pumpkin",
   "block.gravesmash.carved_green_pumpkin": "Carved Green Pumpkin",
   "item.gravesmash.autumn_essence": "Autumn Essence",
-  "block.gravesmash.autumn_leaves": "Autumn Leaves"
+  "block.gravesmash.autumn_leaves": "Autumn Leaves",
+  "item.gravesmash.autumn_helmet": "Autumn Leaf Helmet",
+  "item.gravesmash.autumn_chestplate": "Autumn Leaf Chestplate",
+  "item.gravesmash.autumn_leggings": "Autumn Leaf Leggings",
+  "item.gravesmash.autumn_stompers": "Autumn Leaf Stompers"
 
 }

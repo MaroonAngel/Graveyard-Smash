@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "gravesmash:item/autumn_leaf_chestplate"
+  }
+}
