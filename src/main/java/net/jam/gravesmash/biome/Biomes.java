@@ -46,6 +46,8 @@ public class Biomes {
         DefaultBiomeFeatures.addDefaultFlowers(generationSettings);
         DefaultBiomeFeatures.addWaterBiomeOakTrees(generationSettings);
         generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, Features.PUMPKIN_PATCH);
+        generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, Features.GREEN_PUMPKIN_PATCH);
+        generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, Features.WHITE_PUMPKIN_PATCH);
         generationSettings.feature(GenerationStep.Feature.VEGETAL_DECORATION, Features.PUMPKIN_BUSH);
         generationSettings.feature(GenerationStep.Feature.TOP_LAYER_MODIFICATION, Features.TREE_CONFIGURED);
         generationSettings.feature(GenerationStep.Feature.SURFACE_STRUCTURES, Features.GRAVEYARD_CONFIGURED);
@@ -72,3 +74,4 @@ public class Biomes {
                 ArrayUtils.add(SetBaseBiomesLayerAccessor.getTemperateBiomes(), BuiltinRegistries.BIOME.getRawId(PUMPKIN_PATCH)));
     }
 }
+

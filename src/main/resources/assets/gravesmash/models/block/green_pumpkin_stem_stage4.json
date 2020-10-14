@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/stem_growth4",
   "textures": {
-    "stem": "gravesmash:block:green_pumpkin_stem"
+    "stem": "gravesmash:block/green_pumpkin_stem"
   }
 }

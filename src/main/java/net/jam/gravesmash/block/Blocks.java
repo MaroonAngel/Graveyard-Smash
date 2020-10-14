@@ -15,17 +15,21 @@ public class Blocks {
     // Pumpkins
     public static final WhitePumpkinBlock WHITE_PUMPKIN = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
     public static final CarvedPumpkinBlock CARVED_WHITE_PUMPKIN = new CarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
+    public static final StemBlock WHITE_PUMPKIN_SEEDS = new StemBlock(WHITE_PUMPKIN, FabricBlockSettings.of(Material.PLANT).breakInstantly().noCollision().ticksRandomly().sounds(BlockSoundGroup.CROP));
+    public static final AttachedStemBlock ATTACHED_WHITE_PUMPKIN_SEEDS = new AttachedStemBlock(WHITE_PUMPKIN, FabricBlockSettings.of(Material.PLANT).breakInstantly().noCollision().sounds(BlockSoundGroup.CROP));
     public static final WhitePumpkinBlock ATTACHED_WHITE_PUMPKIN_NORTH = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
     public static final WhitePumpkinBlock ATTACHED_WHITE_PUMPKIN_SOUTH = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
     public static final WhitePumpkinBlock ATTACHED_WHITE_PUMPKIN_EAST = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
     public static final WhitePumpkinBlock ATTACHED_WHITE_PUMPKIN_WEST = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
 
-    public static final WhitePumpkinBlock GREEN_PUMPKIN = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
+    public static final GreenPumpkinBlock GREEN_PUMPKIN = new GreenPumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
     public static final CarvedPumpkinBlock CARVED_GREEN_PUMPKIN = new CarvedPumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
-    public static final WhitePumpkinBlock ATTACHED_GREEN_PUMPKIN_NORTH = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
-    public static final WhitePumpkinBlock ATTACHED_GREEN_PUMPKIN_SOUTH = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
-    public static final WhitePumpkinBlock ATTACHED_GREEN_PUMPKIN_EAST = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
-    public static final WhitePumpkinBlock ATTACHED_GREEN_PUMPKIN_WEST = new WhitePumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
+    public static final StemBlock GREEN_PUMPKIN_SEEDS = new StemBlock(GREEN_PUMPKIN, FabricBlockSettings.of(Material.PLANT).breakInstantly().ticksRandomly().sounds(BlockSoundGroup.CROP).noCollision());
+    public static final AttachedStemBlock ATTACHED_GREEN_PUMPKIN_SEEDS = new AttachedStemBlock(GREEN_PUMPKIN, FabricBlockSettings.of(Material.PLANT).breakInstantly().noCollision().sounds(BlockSoundGroup.CROP));
+    public static final GreenPumpkinBlock ATTACHED_GREEN_PUMPKIN_NORTH = new GreenPumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
+    public static final GreenPumpkinBlock ATTACHED_GREEN_PUMPKIN_SOUTH = new GreenPumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
+    public static final GreenPumpkinBlock ATTACHED_GREEN_PUMPKIN_EAST = new GreenPumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
+    public static final GreenPumpkinBlock ATTACHED_GREEN_PUMPKIN_WEST = new GreenPumpkinBlock(FabricBlockSettings.of(Material.GOURD).strength(1.0f).sounds (BlockSoundGroup.WOOD));
 
     // Jack
     public static final PedestalBlock PEDESTAL = new PedestalBlock(FabricBlockSettings.of(Material.STONE).strength(2f).sounds(BlockSoundGroup.STONE));
@@ -37,6 +41,10 @@ public class Blocks {
     public static void register() {
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "white_pumpkin"), WHITE_PUMPKIN);
         Registry.register(Registry.ITEM, new Identifier("gravesmash", "white_pumpkin"), new BlockItem(WHITE_PUMPKIN, new Item.Settings().group(ItemGroup.DECORATIONS)));
+        Registry.register(Registry.BLOCK, new Identifier("gravesmash", "white_pumpkin_seeds"), WHITE_PUMPKIN_SEEDS);
+        Registry.register(Registry.BLOCK, new Identifier("gravesmash", "attached_white_pumpkin_seeds"), ATTACHED_WHITE_PUMPKIN_SEEDS);
+        Registry.register(Registry.ITEM, new Identifier("gravesmash", "white_pumpkin_seeds"), new BlockItem(WHITE_PUMPKIN_SEEDS, new Item.Settings().group(ItemGroup.MISC)));
+
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "carved_white_pumpkin"), CARVED_WHITE_PUMPKIN);
         Registry.register(Registry.ITEM, new Identifier("gravesmash", "carved_white_pumpkin"), new BlockItem(CARVED_WHITE_PUMPKIN, new Item.Settings().group(ItemGroup.DECORATIONS)));
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "attached_white_pumpkin_north"), ATTACHED_WHITE_PUMPKIN_NORTH);
@@ -46,6 +54,9 @@ public class Blocks {
 
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "green_pumpkin"), GREEN_PUMPKIN);
         Registry.register(Registry.ITEM, new Identifier("gravesmash", "green_pumpkin"), new BlockItem(GREEN_PUMPKIN, new Item.Settings().group(ItemGroup.DECORATIONS)));
+        Registry.register(Registry.BLOCK, new Identifier("gravesmash", "green_pumpkin_seeds"), GREEN_PUMPKIN_SEEDS);
+        Registry.register(Registry.BLOCK, new Identifier("gravesmash", "attached_green_pumpkin_seeds"), ATTACHED_GREEN_PUMPKIN_SEEDS);
+        Registry.register(Registry.ITEM, new Identifier("gravesmash", "green_pumpkin_seeds"), new BlockItem(GREEN_PUMPKIN_SEEDS, new Item.Settings().group(ItemGroup.MISC)));
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "carved_green_pumpkin"), CARVED_GREEN_PUMPKIN);
         Registry.register(Registry.ITEM, new Identifier("gravesmash", "carved_green_pumpkin"), new BlockItem(CARVED_GREEN_PUMPKIN, new Item.Settings().group(ItemGroup.DECORATIONS)));
         Registry.register(Registry.BLOCK, new Identifier("gravesmash", "attached_green_pumpkin_north"), ATTACHED_GREEN_PUMPKIN_NORTH);
