@@ -37,7 +37,7 @@ public class SpookyCraftingTableScreenHandler extends AbstractRecipeScreenHandle
     }
 
     public SpookyCraftingTableScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
-        super(ScreenHandlerType.CRAFTING, syncId);
+        super(Screens.SPOOKY_CRAFTING_TABLE_SCREEN_HANDLER, syncId);
         this.input = new CraftingInventory(this, 3, 3);
         this.result = new CraftingResultInventory();
         this.context = context;

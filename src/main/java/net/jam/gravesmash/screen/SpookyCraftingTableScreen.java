@@ -19,7 +19,7 @@ import net.minecraft.util.Identifier;
 public class SpookyCraftingTableScreen extends HandledScreen<SpookyCraftingTableScreenHandler> implements RecipeBookProvider {
 
     private static final Identifier TEXTURE = new Identifier("gravesmash", "textures/gui/container/spooky_crafting_table.png");
-    private static final Identifier RECIPE_BUTTON_TEXTURE = new Identifier("textures/gui/recipe_button.png");
+    private static final Identifier RECIPE_BUTTON_TEXTURE = new Identifier("gravesmash", "textures/gui/recipe_button.png");
     private final RecipeBookWidget recipeBook = new RecipeBookWidget();
     private boolean narrow;
 
