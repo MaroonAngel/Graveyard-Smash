@@ -17,8 +17,6 @@ import net.minecraft.world.gen.placer.SimpleBlockPlacer;
 import net.minecraft.world.gen.stateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
-import static net.minecraft.world.gen.feature.Feature.RANDOM_PATCH;
-
 public class Features {
 
     public static ConfiguredFeature<?, ?> PUMPKIN_PATCH;
@@ -31,7 +29,7 @@ public class Features {
 
     public static Feature<DefaultFeatureConfig> GRAVEYARD = new GraveyardFeature(DefaultFeatureConfig.CODEC);
     public static ConfiguredFeature<?, ?> GRAVEYARD_CONFIGURED = GRAVEYARD.configure(FeatureConfig.DEFAULT)
-            .decorate(Decorator.CHANCE.configure(new ChanceDecoratorConfig(20)));
+            .decorate(Decorator.CHANCE.configure(new ChanceDecoratorConfig(60)));
 
 
     public static void register() {

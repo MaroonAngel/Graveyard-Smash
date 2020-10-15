@@ -33,7 +33,7 @@ public class Blocks {
 
     // Jack
     public static final PedestalBlock PEDESTAL = new PedestalBlock(FabricBlockSettings.of(Material.STONE).strength(2f).sounds(BlockSoundGroup.STONE));
-    public static final Block AUTUMN_LEAVES = new Block(FabricBlockSettings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS));
+    public static final Block AUTUMN_LEAVES = new Block(FabricBlockSettings.of(Material.LEAVES).strength(0.2f).sounds(BlockSoundGroup.GRASS).nonOpaque());
     //Spooky Magic
     public static final SpookyCraftingTableBlock SPOOKY_CRAFTING_TABLE = new SpookyCraftingTableBlock(FabricBlockSettings.of(Material.STONE).strength(5.0F).sounds (BlockSoundGroup.STONE));
 
